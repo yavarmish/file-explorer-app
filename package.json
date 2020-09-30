@@ -1,0 +1,14 @@
+{
+  "name": "fileexplorer",
+  "version": "1.0.0",
+  "description": "online file xplorer app\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[Ce\u001b[C\u001b[C\u001b[D\u001b[Dxplorer \u001b[3~\u001b[3\u001b[Capp",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yash",
+  "license": "ISC"
+}
