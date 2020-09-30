@@ -1,0 +1,71 @@
+/* 
+animations also brings change over time like transition bu they provide us with a lot of options unlike transitions which go from 0 to 100 we can set evry instant of time as different transition.i.e. different transitions at any value between 0 to 100
+*/
+div {
+  width: 200px;
+  height: 100px;
+  color: wheat;
+  margin: 10px;
+}
+.transition {
+  background: red;
+  transition: all 2s linear;
+}
+.transition:hover {
+  background: yellow;
+  transform: translateX(40px);
+}
+.animation {
+  background: blue;
+  /* animatin-name,animation-duration and animation-iteraton count are necessary to mention */
+  animation-name: move;
+  animation-duration: 10s;
+  animation-iteration-count: 2;
+  /* shorthand */
+  animation: move 5s linear 0s infinite;
+}
+/* syntax is @keyframes animation-name */
+@keyframes move {
+  /* we can add as many transitions at different percentages,but here we need to mention the properties and values that will undergo transition rest of the work is done in the animation class itself */
+  0% {
+    transform: translateX(40px);
+  }
+  50% {
+    transform: translateX(100px);
+    background: red;
+  }
+  75% {
+    background: yellow;
+    transform: translateX(-200px);
+  }
+  100% {
+    background: green;
+    transform: translateX(60px);
+  }
+}
+/* animation-fill-mode:what values are applied by the animation outside the time it is executing */
+.anime {
+  animation: anime 5s 2;
+  /* if we want anime to stay with opacity 0.5 we can use animation-fill-mode with property forward */
+  animation-fill-mode: forwards;
+}
+.anime {
+  background: orange;
+}
+@keyframes anime {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    transform: translateX(200px);
+    opacity: 0.25;
+  }
+  50% {
+    transform: translateX(-100px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 0.5;
+  }
+}

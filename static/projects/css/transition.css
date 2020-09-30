@@ -1,0 +1,82 @@
+/* 
+transition: change over time
+transition-property:
+transition-duration:
+(these two properties are mandatory to add)
+*/
+.one,
+.two,
+.three {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+.one:hover,
+.two:hover,
+.three:hover {
+  background: lightcoral;
+}
+.one {
+  background: red;
+}
+.two {
+  background: green;
+}
+.three:hover {
+  border-radius: 50%;
+}
+.three {
+  background: yellow;
+  transition-property: background;
+  /* we can also add multiple properties to undergo transition by the following syntax */
+  transition-property: background, border-radius;
+  transition-duration: 2s;
+  /* transition delay */
+  /* this sets the time after which the transition will start occouring */
+  transition-delay: 1s;
+  /* short-hand for writing the same code as above */
+  transition: background 2s 1s, border-radius 2s 1s;
+  /* if we want same transition for all the properties we can select all of them as follows */
+  /* mentioning the translation-delay is optional */
+  transition: all 2s 1s;
+}
+/* 
+transition timing
+this decides how the transition takes place
+transition-timing-function:
+transition:all 3s here 5s;
+ease = defalut
+ease = slow start,fast,slow end
+linear = same speed start to end
+ease-in = slow start 
+ease-out = slow end
+ease-in-out = slow start, fast, slow end
+*/
+div {
+  width: 100px;
+  height: 100px;
+  background: yellow;
+  margin: 20px;
+  color: black;
+  transition: all 0.8s;
+}
+div:hover {
+  transform: translateX(50px);
+}
+.ease {
+  transition-timing-function: ease; /*this is set by default hence brings no change*/
+  /* same as */
+  /* transition: all 2s ease; */
+}
+.linear {
+  transition-timing-function: linear;
+}
+.ease-in {
+  transition-timing-function: ease-in;
+}
+.ease-out {
+  transition-timing-function: ease-out;
+}
+.ease-in-out {
+  transition-timing-function: ease-in-out;
+}

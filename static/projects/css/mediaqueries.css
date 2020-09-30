@@ -1,0 +1,45 @@
+/* Media Queries
+Used for responsive design
+different styles according to different screen sizes
+min-width --- starting from
+max-width --- up to
+mobile first(this means we will first handle the design accordig to small screen size and later we can handle for larger screen sizes)
+*/
+body {
+  background: yellow;
+}
+.banner {
+  background: red;
+}
+h1 {
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+@media screen and (min-width: 576px) {
+  body {
+    background: red;
+  }
+  .banner {
+    background: yellow;
+  }
+  h1 {
+    color: black;
+    font-size: 60px;
+  }
+  /* notice that the properties that are not overwritten in media queries are inherited by the previous code,for example text-decoration underlines work beyond 576px because it's not overwritten */
+}
+@media screen and (min-width: 966px) {
+  body {
+    background: green;
+  }
+  .banner {
+    background: blue;
+  }
+  h1 {
+    color: red;
+    font-size: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+}

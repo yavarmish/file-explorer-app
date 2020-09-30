@@ -1,0 +1,30 @@
+/* flex-direction column */
+.home {
+  background: lightblue;
+}
+.search {
+  background: lightcoral;
+}
+.logout {
+  background: lightgreen;
+}
+.container {
+  border: 2px solid black;
+  display: flex;
+  /* flex-direction can be set to column so that main axis now goes from top to bottom.
+  so now justify-content will control items
+  vertically */
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  /* we can also control them along the cross-axis using align items */
+  align-items: stretch; /*it is set to strech by default*/
+  align-items: flex-end;
+}
+body,
+html {
+  box-sizing: border-box;
+  margin: 0;
+  background: peachpuff;
+  height: calc(100vh - 4px);
+}

@@ -1,0 +1,74 @@
+.home {
+  background: lightblue;
+}
+.search {
+  background: lightcoral;
+}
+.logout {
+  background: lightgreen;
+}
+.container {
+  border: 2px solid black;
+  display: flex;
+  /* main axis and cross axis */
+  /* by default main axis goes from left to right and cross acis goes from up to bottom in a flexbox,we can change this using flex-direction */
+  flex-direction: column; /*now main axis goes from left to right*/
+  flex-direction: row;
+  /* justify content */
+  /* it controls the content along main axis */
+  /* justify-content */
+  justify-content: flex-end; /*places them at flex end*/
+  justify-content: space-around; /*this gives an equal amount of space between left and right hand side of each item.notice that space on left of home is half of space between hme and search*/
+  justify-content: space-between; /*space between each of them is same but ther first and last items are placed at flex start and flex end respectively unlike space evenly*/
+  justify-content: space-evenly; /* evenly spaced inside the flexbox(at equal distaces)*/
+  justify-content: flex-start;
+}
+/* positioning items(along main-axis)(which can't be achieved only by justify-content)*/
+.logout {
+  /*margin-left: auto; */ /*this will place logout
+  to the extreme right*/
+}
+/* or if we want only home to be on the extreme right */
+/*
+.container {
+  justify-content: flex-end;
+}
+ .home {
+  margin-right: auto;
+} */
+/* flex-property */
+/* it helps in making the flex content resopnsive */
+.container div {
+  /* flex: 1; */
+  /* this was same as assingning width of 33.33% but if we added another div we'd have to change the percentage whereas in this case the flex-box adjusts automatically */
+  /* flex property is a actually a short hand for flex-grow,flex-shrink,flex-basis */
+}
+/* if we want a div to aquire different width we can simply change it's value of flex property */
+/* notice that we don't use .search directly becauese parent class along with child i.e .container div is more specific than just a class selector */
+.container .search {
+  /* flex: 2; */
+}
+/* align-items */
+/* controling items along cross axis */
+/* first we set height of html and body to 100% so that the items strech vertically */
+
+body,
+html {
+  box-sizing: border-box;
+  margin: 0;
+  background: peachpuff;
+  height: calc(100vh - 4px);
+}
+.container {
+  height: 100%;
+  align-items: flex-start;
+  /* by default align-items is set to strech */
+  align-items: stretch;
+  align-items: center;
+  /* we can easily center any itme using justify-content now  */
+  /* justify-content: center; */
+}
+/* we can also align individual items by align-self property */
+.logout {
+  align-self: flex-start;
+}

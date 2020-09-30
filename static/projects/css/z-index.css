@@ -1,0 +1,36 @@
+img {
+  width: 100px;
+  height: 100px;
+  cursor: move;
+  position: absolute;
+}
+.banner {
+  margin: 20px;
+  width: 80vw;
+  height: 70vh;
+  border: 5px solid red;
+  position: relative;
+}
+.one {
+  top: 0;
+  left: 0;
+}
+.two {
+  top: 10%;
+  left: 10%;
+}
+.three {
+  top: 20%;
+  left: 20%;
+}
+/* z-index is simply the cordinate on z-axis,we can assign any value to it */
+.one {
+  z-index: 1;
+}
+.two {
+  z-index: -1;
+}
+.three {
+  z-index: -2;
+}
+/* z-index does'nt work for position: static; */

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      A bit of CSS
+    </title>
+    <!-- internal css -->
+    <!--   <style>
+      h1 {
+        color: blue;
+        font-size: 3 rem;
+      }
+    </style>  -->
+    <!--internal css can change all types of same element without acessing each of them individually
+    but it changes the element within the same file i.e not in all the files related to each other for eg index.html about.html etc. so we use external css for that -->
+    <!--external css-->
+    <!--for using external css we create a file with .css extension and provide a link in evry other file we want to use the link should be provided anywhere in the head tag.any change in the main css file leads to change in evry other file with it's link-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- inline css-implemented within the line itself -->
+    <!--<h1 style="color: brown">namaste</h1>-->
+    <!--we have commented inline css because it will overwrite internal or external css-->
+    <h1>hello</h1>
+    <h1>hello</h1>
+    <h1>hello</h1>
+    <h1>hello</h1>
+    <a href="about.html">about page</a>
+    <!--but this is not feasible when we have a large code and some common stylings for same type of attribute.we can't use  inline css for evry line of code as it'd be time consuming-->
+
+    <P>
+      this was random
+    </P>
+    <iframe src="" frameborder="0"></iframe>
+    <iframe
+      width="160"
+      height="215"
+      src="https://www.youtube.com/embed/eaSvVxTbw20"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <dt>Heading<dd>-this is a heading</dd></dt>
+    
+  </body>
+  <!--inline css overwrites internal css and external css.internal css overwrites external css-->
+</html>

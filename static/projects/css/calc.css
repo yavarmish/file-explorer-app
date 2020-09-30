@@ -1,0 +1,18 @@
+/* 
+calc()
+perform math operations + - * /
+to mix and match values
+*/
+* {
+  margin: 0;
+}
+.navbar {
+  height: 100px;
+  color: white;
+  background: blue;
+  font-size: 3rem;
+}
+.banner {
+  min-height: calc(100vh - 100px);
+  background: red;
+}

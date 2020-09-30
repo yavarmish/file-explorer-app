@@ -1,0 +1,79 @@
+/* Default display property
+Block:Starts a new line and takes full width
+inline:take as muc as content space,does'nt start a new line
+*/
+.block {
+  color: white;
+  background: blue;
+}
+.inline {
+  background: red;
+
+  color: white;
+}
+/* we can also change the display by using display property for example block by default(eg. div) can behave as inline by using display: inline; */
+/* Horizontal centering */
+/* it is better to center anything using flexboxes and grid coz it's more straightforward but here we would be using text-align for that*/
+body {
+  text-align: center;
+}
+/* notice that for the block level elements only the text comes to center whereas for inline whole content does */
+/* we assign a particular width to a block element so that it does'nt cover the whole line and then assign left and right margin auto to set it to the center */
+.block {
+  width: 200px;
+  margin: 20px auto;
+}
+/* block:top margin and padding is respected unlike inline
+making a navbar
+list-style-type:property
+descendent selectors
+*/
+ul {
+  text-align: left;
+  list-style-type: none; /*this is used to remove any type of dics(bullets) in front of list items*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul li a {
+  margin: 10px 20px;
+  padding: 6px;
+  text-decoration: none;
+  background: black;
+  color: yellow;
+  display: block; /*now the browser will repsect padding and top and bottom margin,try commenting this to see the difference*/
+}
+/* inline-block */
+/* it is used when you want elements to stay in aline but respect top and bottom margin */
+.ib {
+  font-size: 40px;
+  background: yellow;
+  margin: 20px;
+  display: inline-block;
+}
+/* box-sizing:border-box; */
+/* if we add padding to these three boxes it'd be added outside the mentioned with and height(i.e. 200px) does making the box of height and width 240*240 if we want to maintain the width and height of the box as 200,box-sizing should be set to border-box this adds padding inside the box.you can check this out in google-dev-tools */
+.box-1,
+.box-2,
+.box-3 {
+  width: 200px;
+  height: 200px;
+  color: white;
+  padding: 20px;
+}
+.box-1 {
+  background: red;
+  box-sizing: border-box;
+}
+.box-2 {
+  background: blue;
+  padding: 0;
+}
+.box-3 {
+  background: green;
+}
+/* display propert,opacity and visibility
+dipslay:none; this makes the element non-existent
+opacity:0; makes the element transperent
+visibility:hidden; makes the  element hidden but it exists
+*/

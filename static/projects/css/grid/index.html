@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS grid</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .container {
+        display: grid;
+        /* by default it will have only one column therefore no changes occour */
+        /* we use grid-template columns defines the columns that are required */
+        /* we define the width of the rows */
+        grid-template-columns: 100px auto 100px;
+        /* we define the width of the column */
+        grid-template-rows: 50px 50px;
+        /* we can also provide a gap between each box */
+        grid-gap: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="one">1</div>
+      <div class="two">2</div>
+      <div class="three">3</div>
+      <div class="four">4</div>
+      <div class="five">5</div>
+      <div class="six">6</div>
+    </div>
+  </body>
+</html>

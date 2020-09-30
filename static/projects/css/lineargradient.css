@@ -1,0 +1,28 @@
+div {
+  width: 100px;
+  height: 100px;
+  margin: 6px;
+}
+/* linear gradient provides a color gradient when two or more different colors are listed */
+.one {
+  background: linear-gradient(red, green);
+}
+/* we can also choose the direction for gradient(it's optional) */
+.two {
+  background: linear-gradient(to top, red, green, blue);
+}
+.three {
+  background: linear-gradient(to top right, red, green, blue);
+}
+/* we can also use angles for direction */
+.four {
+  background: linear-gradient(150deg, red, green);
+}
+/* we can also use rgba for creating linear gradients */
+.five {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+}
+.six {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+}
+/* we can also use color-gradient from external resources */

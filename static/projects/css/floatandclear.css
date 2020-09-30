@@ -1,0 +1,37 @@
+.banner {
+  border: solid 2px red;
+  padding: 10px;
+}
+/*  float is a property that forces any element to float (right, left, none, inherit) inside its parent body with the rest of the element to wrap around it.  */
+/* float is set to none by default */
+img {
+  float: left;
+}
+/* clear is used to nullify the effect of float */
+/* notice that the selector is different
+ */
+p {
+  clear: left;
+}
+/* three column layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.one,
+.two,
+.three {
+  float: left;
+  height: 200px;
+  width: 33.33%;
+}
+.one {
+  background: red;
+}
+.two {
+  background: blue;
+}
+.three {
+  background: green;
+}

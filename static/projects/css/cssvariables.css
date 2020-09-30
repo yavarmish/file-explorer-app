@@ -1,0 +1,39 @@
+/* 
+css variables aka custom properties
+hold a value and reuse it
+syntax 
+--varName:value
+property:var(--varName)
+scope
+:root{}===global
+element===local
+*/
+:root {
+  /* declaring a variable */
+  /* globally */
+  --primarycolor: #f15025;
+  --secondarycolor: #1313fa;
+  --maintransition: all 1s linear;
+}
+.heading {
+  color: var(--primarycolor);
+}
+.second-heading {
+  color: var(--primarycolor);
+  transition: var(--maintransition);
+}
+.second-heading:hover {
+  color: var(--secondarycolor);
+}
+/* local variable */
+div {
+  --primaryRed: red;
+}
+/* we can acess this variable anywhere inside the div */
+.main-text {
+  color: var(--primaryRed);
+}
+/* but not outside it */
+.third-heading {
+  color: var(--primaryRed);
+}

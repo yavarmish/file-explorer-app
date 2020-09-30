@@ -1,0 +1,44 @@
+body {
+  background: peachpuff;
+}
+.one,
+.three,
+.five,
+.seven,
+.nine,
+.eleven {
+  background: lightblue;
+}
+.two,
+.six,
+.ten {
+  background: rgba(255, 0, 0, 0.568);
+}
+.four,
+.eight,
+.twelve {
+  background: rgba(206, 149, 27, 0.568);
+}
+.container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.6em;
+  /* we can use height 100px and comment out grid-template-rows if we don't want to use implicit rows */
+  /* height: 100px; */
+}
+.container {
+  display: grid;
+  grid-gap: 3px;
+  grid-template-rows: repeat(2, 100px);
+  /* grid-template-columns: repeat(6, 100px); */
+  /* if we want grid to be reponsive we may use fr instead of px,but that will lead to excessive streching and shrinking of columns,to avoid that we can change the number of columns in a row according to different screen sizes using auto-fit */
+  grid-template-columns: repeat(auto-fit, 100px);
+  /* now the columns autofit according to screen size but still there width remains 100px all throughout,due to which it leaves spaces along column in certain configuration to fix that we can use minmax,we will use 100px as minimum width and 1fr and maximum */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  /* we have only created two rows explicitly but since we adjust number of columns according to screen size now we can get more than two rows whose height may not be 100px,to manage that we can do the folllowing  */
+  /* implicitly rows can be set as */
+  grid-auto-rows: 100px;
+}

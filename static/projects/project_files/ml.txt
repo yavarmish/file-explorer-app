@@ -1,0 +1,24 @@
+# Sallybus
+- Unsupervised Learning ==> (Done)
+ - Hebbian Learning Rule ==> (Done)
+ - Learning Algorithm
+  - Delta Learning ==> (Done)
+  - Widrow-Hoff Rules or LMS Rule ==> (Done)
+- Artifical Neural Networks
+ - All Algorithms
+  - Back Propagation
+- Radial Basis Function ==> (Done)
+ - RBFNN vs MLFNN ==> (Done)
+- Feedback Networks
+ - RNN ==> Done
+ - FCRNN
+ - Partially Connected(PCRNN)
+ - Time Delay Network
+ - Back Propagation on Feedback Networks ==> Done
+- Learning Algorithms
+ - BPTT (Back Propagation Through time) ==> Done
+ - RTRL (Real Time Recurrent Learning)
+- Kohonen Self-Organising Map (SOM)
+ - Learning Algorithms on SOM
+- Topology
+ - 1-D SOM Learn 2-D Topology

@@ -1,0 +1,81 @@
+body {
+  font-family: arvo, serif;
+  background: url("background.jpg") center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.logo {
+  height: 40px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.bg-company-red {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.nav-item {
+  color: white;
+  font-size: 16px;
+  margin-right: 35px;
+  padding: 10px 0;
+}
+.nav-item:hover {
+  border-bottom: 1px solid rgb(0, 254, 183);
+  padding-bottom: 9px;
+}
+.jumbotron {
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  letter-spacing: 2.5px;
+  margin-bottom: 0;
+}
+.jumbotron h1 {
+  font-size: 50px;
+}
+.bodyimage {
+  height: 100px;
+}
+.col-md {
+  text-align: center;
+  color: white;
+}
+.col-md p {
+  font-size: 15px;
+}
+.container {
+  max-width: 1000px;
+}
+.contact {
+  text-align: center;
+  margin-top: 30px;
+}
+.btn {
+  background: rgba(0, 254, 183, 0.5);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 18px;
+  padding: 10px 70px;
+  letter-spacing: 1.3px;
+  margin-bottom: 100px;
+}
+.btn:hover {
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+}
+.footer .container {
+  color: grey;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.footer .container p {
+  margin-bottom: 0;
+  height: 50px;
+  padding-top: 10px;
+}

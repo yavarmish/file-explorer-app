@@ -1,0 +1,44 @@
+/* OPEN THIS WITH TESTCSS.HTML TO KNOW WHAT'S HAPPENING */
+h1 {
+  color: blue;
+  font-size: 3 rem;
+}
+/* shortcut for comments is ctrl+/ */
+/*css rules*/
+/* in the above code h1 is known as the selector */
+/*declaration box*/
+/* declartation
+i.e. property:value; */
+/* element selectors can be grouped as follows */
+h2,
+h3 {
+  color: pink;
+  font-size: 2 rem;
+}
+/*p {
+  color: red;
+}*/
+/* id selector */
+/* we can use element id instead for styling but the id's shoud be unique */
+#heading {
+  color: chocolate;
+  background-color: pink;
+}
+/*notice that there are other heading 1 which remain unaffected when we use id instead*/
+/* class selector*/
+.green {
+  color: green;
+}
+.red {
+  color: red;
+}
+/* class and id can be used together for a single element */
+/*div and span (html elements used for grouping)*/
+span {
+  text-transform: uppercase;
+}
+/*div starts a new line whereas span does'nt*/
+/*div {
+  color: red;
+}*/
+/* we can also assign a class in div which is helpful in gouping */

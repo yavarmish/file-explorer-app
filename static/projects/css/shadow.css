@@ -1,0 +1,17 @@
+/* 
+text-shadow property
+box-shadow property
+syntax same for both of them
+property: shadow(on x-axis) shadow(on y-axis) amount-of-blur color-of-shadow;
+*/
+h1 {
+  text-shadow: 1px 1px 10px red;
+}
+.box {
+  width: 200px;
+  height: 100px;
+  background: orange;
+  margin: 20px;
+  box-shadow: 3px 3px 6px grey;
+}
+/* external resources,google text shadow generator */

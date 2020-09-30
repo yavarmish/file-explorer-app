@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>FORMS</h1>
+    <form action="">
+      <label for="name">first name</label>
+      <input type="text" name="some random name" id="" />
+      <!--id attribute helps when working with javascript or using labels etc. it can be omitted if none of the above things are used-->
+      <!--for submit option we can use a simple button or use input type submit-->
+      <!-- <button type="submit">submit karna hai to daba de</button> or -->
+      <!--<input type="submit" value="submit">-->
+      <br /><br />
+      <!--the value attribute unlike placeholder do not disappear when we start writing the text this attribute may also be used in password-->
+      <input type="email" name="" id="" value="@gmail.com" />
+      <br />
+      <input type="password" placeholder="password" />
+
+      <!--other method to write txt is a description box-->
+      <br /><br />
+      <textarea
+        name=""
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="this is a description box"
+      ></textarea
+      ><br />
+      <!--radio buttons.if u want user to select any one of the radio buttons keep there name same-->
+      <p>select a language</p>
+      <input
+        type="radio"
+        name="anynamebutsame"
+        id=""
+        value="javascript"
+      />Javascript
+      <input type="radio" name="anynamebutsame" id="" value="java" />Java
+      <input type="radio" name="anynamebutsame" id="" value="c++" />C++
+      <br />
+      <!--if we want to sselect multiple options we can rather use check boxes-->
+      <p>u can select multiple languages here</p>
+      <input
+        type="checkbox"
+        name="programming"
+        id=""
+        value="Javascript"
+      />Javascript
+      <input type="checkbox" name="programming" id="" value="Java" />Java
+      <input type="checkbox" name="programming" id="" value="Python" />Python
+      <br />
+      <p>select a language</p>
+      <select name="languages" id="">
+        <option value="Java">java</option>
+        <option value="Javascript">javaascript</option>
+        <option value="Python">python</option>
+      </select>
+
+      <br />
+      <input type="submit" value="submit " />
+    </form>
+    <form method="get">
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" maxlength="50px" />
+    </form>
+  </body>
+</html>

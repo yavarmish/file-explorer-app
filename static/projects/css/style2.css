@@ -1,0 +1,27 @@
+/* OPEN THIS WITH TESTCSS2.HTML */
+/* INHERITANCE */
+/* ALL THE PROPERTIES OF PARENTS ARE INHERITED BY CHILD UNLESS OVERWRITTEN IN THE CHILD ELEMENT */
+/* body {
+  font-family: monospace;
+  line-height: 1.5 em;
+}
+div {
+  color: blue;
+  border: solid 3px black;
+}
+h1 {
+  color: green;
+} */
+/* Last Rule specificity and universal selector */
+/*last rule states that selector of same specificity when listed in css code after one another executes according to the last mentioned selector*/
+/* p {
+  color: blue;
+}
+p {
+  color: orange;
+} */
+/*specificity refers to preference order of selector eg.class has more specificity than paragraph and universal selector has the least specficity  */
+/*Universal selector.selects the entire body*/
+* {
+  color: chocolate;
+}

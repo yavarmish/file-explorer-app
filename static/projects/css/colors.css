@@ -1,0 +1,33 @@
+/* colors */
+#first {
+  color: blue;
+  background-color: aqua;
+}
+#second {
+  /* we can also use background instead of background-color it covers both back clor or image */
+  background: aqua;
+}
+/* rgb color ===0-255*/
+h3 {
+  color: rgb(255, 0, 0);
+  background-color: rgb(0, 0, 0);
+}
+h4 {
+  color: rgb(100, 20, 30);
+  background-color: rgb(0, 255, 0);
+}
+/* rgba - 0-1 opacity */
+#third {
+  /* this will be 50% opaque */
+  color: rgba(200, 20, 35, 0.5);
+  /* if opacity is set to 0.the color would be totally transperent i.e. color will not be visible */
+  background-color: rgba(20, 10, 15, 0);
+}
+/* HEX VALUES #RRGGBB 
+#ff0000==RED #00ff00==GREEN
+*/
+#first {
+  color: #ff123d;
+}
+/* we can acess coolors site for different colors also */
+/* font-size,height,width are clear by their respective names we can use unit as pixels.pixels is a absolute value of measurement which broadly speaking represents a dot on the screen */

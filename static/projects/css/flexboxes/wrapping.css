@@ -1,0 +1,42 @@
+.home {
+  background: lightblue;
+}
+.search {
+  background: lightcoral;
+}
+.logout {
+  background: lightgreen;
+}
+.container {
+  border: 2px solid black;
+  display: flex;
+}
+.container div {
+  /* width: 300px; */
+  /* if we do this it fills the whole container because by default flex-wrap is set to no wrap,if we set it to wrap,it will wrap items inside the container with the given width */
+}
+.container {
+  flex-wrap: wrap;
+  flex-wrap: nowrap; /*done to revert the changes*/
+}
+.search {
+  display: none;
+}
+/* .home,
+.logout {
+  flex: 1;
+} */
+/* flex-grow,flex-shrink and flex-basis */
+/* writing flex:1; is same as writing flex:1 1 0,which is same as writing flex-grow:1; flex-shrink:1; flex-basis:0; simultaneously */
+.home,
+.logout {
+  flex-basis: 200px;
+  /* now both home and logout acquire a space of 200px each if available i.e if screen size is not smaller than 400,if it is then they acquire the whole container instead(whic can be avoided by flex-wrap) */
+}
+/* flex-grow decides the rate at which the element grows */
+/* order */
+/* the order property allows us to change the order of elements.all elements by default have order of 0 */
+/* if we want logout before home we can assign it a order less than 0 */
+.logout {
+  order: -1;
+}

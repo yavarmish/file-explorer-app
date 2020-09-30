@@ -1,0 +1,98 @@
+/* 
+CSS Box Model
+ */
+/* .content {
+  width: 10em;
+  height: 4em;
+  border: 2px dashed black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  margin-top: -2em;
+  left: 50%;
+  margin-left: -5em;
+}
+.padding {
+  border: 40px solid rgba(0, 0, 0, 0.315);
+  width: 20em;
+  height: 8em;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  margin-top: -4em;
+  left: 50%;
+  margin-left: -10em;
+}
+.borderheading {
+  position: absolute;
+  top: 40%;
+  margin-left: 307px;
+}
+.border {
+  width: 30em;
+  height: 16em;
+  border: 5px solid black;
+  disp
+  lay: flex;
+  justify-content: center;
+  margin-top: 36%;
+  margin-left: 85px;
+} */
+/* box-model begins from here */
+/* different ways to add padding */
+h1 {
+  background: green;
+  margin: 40px 80px;
+  /* padding: 20px; this assigns same value to padding top,bottom,left,right */
+  /* padding: 40px 20px; this assigns 40 px to padding top and bottom and 20px to left and right */
+  padding: 40px 20px 30px 50px; /*this assigns padding of 40 px,20px,30 px,50px to top,right,bottom and left respectivley */
+  /* or we can use padding top,bottom,left,right individually i.e. padding-top:40px; etc. */
+}
+/* margin */
+/* the syntax is same as padding */
+/* margin can also be negative */
+p {
+  background: pink;
+  margin: 30px;
+  padding: 20px;
+}
+/* html has some margin by default,to remove that we can use assign margin: 0; in universal selector */
+/* border */
+p {
+  /* one way to do it */
+  border-style: solid;
+  border-width: 10px;
+  border-color: green;
+  /* another way */
+  border: 10px dashed red;
+}
+/* we can also provide border to any side individually */
+h1 {
+  border-bottom: 10px solid black;
+}
+/* border-radius */
+.hoty {
+  background: pink;
+  border: 5px solid black;
+  padding: 20px;
+  margin: 30px;
+  /* border-radius: 10px; */
+  border-radius: 50%;
+}
+/* outline and outline-offset */
+/* outline comes after border and before margin in css box-model.outline offset allows us to shift outline outside or inside */
+.nope {
+  background: yellow;
+  padding: 20px;
+  border: 10px solid orange;
+  outline: 10px solid black;
+  outline-offset: 10px;
+  outline-offset: -20px;
+  margin: 20px;
+}

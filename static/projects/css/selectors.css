@@ -1,0 +1,71 @@
+/* basic selectors like universal selector(*),class selector(.something),id selector(#something),element selector have already been covered */
+/* descendant and child combinators */
+/* any h1 within the div would be selcted  */
+/* descendant selector */
+div h1 {
+  color: red;
+}
+/* child selector */
+/* syntax for selecting direct children */
+/* the h1 withing the list won't be styled as it's not a direct children */
+div > h1 {
+  color: blue;
+}
+/* selecting the class is more specific therefore both of the headings turn green */
+.header h1 {
+  color: green;
+}
+.header > h1 {
+  color: purple;
+}
+/* pseudo selectors ::first-line and ::first-letter */
+p::first-line {
+  font-weight: bold;
+}
+p::first-letter {
+  font-size: 2rem;
+}
+/* pseudo classes */
+/* :hover */
+
+p:hover {
+  color: rebeccapurple;
+}
+.header:hover {
+  background: yellow;
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+}
+/* :link :visited :hover :active */
+a:link {
+  color: aqua;
+}
+a:visited {
+  color: red;
+}
+a:hover {
+  color: blue;
+}
+a:active {
+  color: green;
+}
+/* :root root element of rhe document
+html element
+general styles
+css variables */
+
+:root {
+  font-size: 125%;
+  /* 1 rem is 16 pixels by default */
+}
+h1 {
+  font: size 3rem;
+}
+.absolute {
+  font-size: 24px;
+}
+.responsive {
+  font-size: 1.5rem;
+}

@@ -1,0 +1,42 @@
+div {
+  border: 3px solid red;
+  background: yellow;
+  margin-top: 40px;
+}
+.one {
+  background: blue;
+}
+.two {
+  background: green;
+}
+.special {
+  background: lightcoral;
+  font-size: 20px;
+}
+/* all members by default have position static therefore it makes no change in default */
+
+/* if we use position as relative we can move that element up down left or right relative to where it was sitting earlier */
+.one {
+  position: relative;
+  top: 100px; /*the element moves down by 100px i.e. up relatively*/
+}
+/* position:absolute works differently,it goes above and find the first class with position relative,if no class has been set to relative it sets it's position according to the body .
+ the element is positioned absolutely to its first positioned parent.the element set to relative should be immediate ancestor of absolute for it to work*/
+.two {
+  position: relative;
+}
+.special {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.para {
+  font-size: 30px;
+}
+/* position:fixed;.it fixes the element to any position you desire,it does'nt move if u scroll unlike the rest of the page */
+button {
+  font-size: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}

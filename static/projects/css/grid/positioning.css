@@ -1,0 +1,69 @@
+body {
+  background: lightgrey;
+}
+.container {
+  text-align: center;
+}
+.header {
+  background: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu {
+  background: rgba(180, 23, 23, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  background: lightsalmon;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  background: brown;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(2, 1fr);
+  /*  making 3 rows */
+  grid-template-rows: 40px 200px 40px;
+}
+/* now if we want header to acquire all the columns we can do it in following ways */
+.header {
+  /* this defines the starting column line */
+  grid-column-start: 1;
+  /* this defines the ending column line */
+  grid-column-end: 3;
+  /* writing these two simultaneously is same as */
+  grid-column: 1 / 3;
+  /* which is same as */
+  grid-column: 1 / span 2; /*this means starting fromm first column line we want header to span across two rows*/
+  /* if we want an element to acquire all the columns,we can alternatively write- */
+  grid-column: 1/-1; /*on writing this element streches across all the columns*/
+}
+/* we also want footer to spam across all the columns */
+.footer {
+  grid-column: 1/-1;
+}
+/* if we want content to acquire more space than menu by adding columns, we can do it by the following way */
+.container {
+  grid-template-columns: repeat(12, 1fr);
+}
+.content {
+  grid-column: 2/-1;
+}
+/* grid row property */
+.header {
+  grid-column: 2/-1;
+}
+.menu {
+  grid-row: 1/3;
+}

@@ -1,0 +1,44 @@
+/*percent values-RELATIVE*/
+/* in the following case the percent values are relative to the parent class.therefore if we do not specify the properties of parent class .child class will have no effect(try commenting outer selector) */
+
+.inner {
+  width: 50%;
+  height: 50%;
+  background: red;
+}
+.outer {
+  width: 200px;
+  height: 200px;
+  background: blue;
+}
+/*
+em-relative value that depends on parent
+1em=16px default browser style
+1em=base value 
+*/
+.relative {
+  font-size: 2em;
+}
+.absolute {
+  font-size: 32px;
+}
+div {
+  font-size: 10px;
+}
+/* if u comment the div selector size of absolute and relative become equal.by using the div selector with font size 10 u change the parent size and thus child font-size changes */
+/*
+rem-relative depends on root(i.e. html)
+for example
+html{
+    font-size:40px
+}
+it does not depend on the parent unlike em
+*/
+/* 
+vh-view height-precent of the screen
+vw-view width-percent of the screen
+for example
+.banner{
+    width:50vw;this sets the width to 50% of the screen width.similarly we can use vh
+}
+*/

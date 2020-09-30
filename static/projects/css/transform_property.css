@@ -1,0 +1,34 @@
+/* 
+transform: translate(),scale(),rotate(),skew()
+*/
+div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+.one {
+  background: red;
+  /* we can use values or percentages.the percentages are relative */
+  transform: translateX(20px);
+  transform: translateX(50%);
+  /* 50% means 50% of 150px i.e. 75px */
+  transform: translateY(
+    60px
+  ); /*this move it by 60px downward.use -ve values in translateY() for moving it upward*/
+  /* scale function */
+  transform: scaleX(2); /*this will make the element twice as big*/
+  /* transform: scaleY(2); */
+  /* rotate function */
+  transform: rotateZ(45deg);
+}
+.two {
+  background: green;
+  /* we can use translate x and y together also */
+  transform: translate(100px, 300px);
+}
+.three {
+  background: yellow;
+  transform: scale(0.5, 0.5);
+  /* skew function */
+  transform: skewX(20deg);
+}

@@ -1,0 +1,33 @@
+.one {
+  background: lavender;
+}
+.two {
+  background: lawngreen;
+}
+.three {
+  background: lightcyan;
+}
+.four {
+  background: gold;
+}
+.five {
+  background: darkgrey;
+}
+.six {
+  background: mediumseagreen;
+}
+
+/* fraction units provide a better way for setting rows and columns of a grid */
+.container {
+  text-align: center;
+  display: grid;
+  /* we can also set columns in fraction units(responsive also) */
+  grid-template-columns: 1fr 1fr 1fr;
+  /* this will make three columns of  equal sizes */
+  /* amother way to write the  same thing */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 30px);
+  /* we can write the above two statements simultaneously as  */
+  grid-template: repeat(2, 50px) / repeat(3, 1fr);
+  grid-gap: 3px;
+}

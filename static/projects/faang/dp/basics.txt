@@ -1,0 +1,34 @@
+enhanced recursion
+dynamic programming identification
+1.choice - the option to include or exclude certain given element
+2.optimal - min,max 
+
+<---Basic Parent Problems and possible variations--->
+
+1.0-1 knapsack(6)
+2.Unbounded knapsack(5)
+3.Fibonacci(7)
+4.LCS(15)
+5.LIS(10)
+6.Kdanes algo(6)
+7.Matrix Chain Multiplication(7)
+8.Dp on Trees(4)
+9.DP on grid(14)
+10.Others(5)
+
+<--0-1 knapsack variations-->
+1.Subset Sum
+2.Equal Sum Partition
+3.Count of Subset Sum
+4.Minimum Subset Sum Difference
+5.Target sum
+6.No. of Subset with given difference
+
+<--unbounded knapsack variations-->
+1.Rod Cutting
+2.Coin Change
+3.Coin Change 2
+4.Maximum Ribbon Cut
+
+
+

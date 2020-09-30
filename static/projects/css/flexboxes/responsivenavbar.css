@@ -1,0 +1,36 @@
+/* to make a navbar responsive we'll use media queries along with flex-boxes*/
+body {
+  background: peachpuff;
+}
+
+.container {
+  border: 2px solid black;
+  display: flex;
+  background: lightblue;
+  justify-content: flex-end;
+}
+.container li {
+  width: 600px;
+  list-style: none;
+  font-size: 60px;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  .container li {
+    flex: 1 1 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .container li {
+    flex: 1 1 100%;
+  }
+}

@@ -1,0 +1,72 @@
+div {
+  min-height: 400px;
+  color: red;
+}
+.bigimg {
+  background: url("./bigimg.jpg");
+}
+.smallimg {
+  background: url("./smallimg.jpeg");
+}
+.folderimg {
+  background: url("./folder/folderimg.jpeg");
+}
+/* background-repeat */
+.smallimg {
+  background-repeat: repeat; /*this value is by default therefore it has no effect*/
+  background-repeat: no-repeat; /*now the small image stops repeating itself and a single small sized image appears as background*/
+}
+/* background-size */
+/* if we want the small image not to repeat and also to cover the whole background we can set background-size to cover */
+.smallimg {
+  /* background-size: cover; */
+  /* setting background-size to contain does not let the image distort even if it's set on no-repeat */
+  background-repeat: no-repeat;
+}
+/* background-position */
+.smallimg {
+  background-position: center; /*this sets the small image in the center*/
+  /* background-position can also be set to top,bottom,left or right  */
+  /* we can also use x and y coordinates of the image to set its position,the coordinates could be values or percentages  */
+  background-position: 70px 70px;
+  background-position: 40% 40%;
+}
+/* background-attachment */
+/* comment from here to see what we did previously */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+div {
+  min-height: 100vh;
+  color: green;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.folderimg {
+  background: url("./bigimg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bigimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.smallimg {
+  background: url("./folder/folderimg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /*this keeps the image fixed but the text moves*/
+}
+/* linear gradient is covered next but we can also apply linear gradient to image  */
+.folderimg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./bigimg.jpg") center/cover fixed no-repeat;
+}
